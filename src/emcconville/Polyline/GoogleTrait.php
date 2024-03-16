@@ -136,7 +136,7 @@ namespace emcconville\Polyline
                 'tuple'     => 'polylineTupleSize'
             );
             
-            $whoami = get_class(); // Traits should be late-static binding
+            $whoami = get_class($this); // Traits should be late-static binding
             
             foreach($cfgMethods as $key => $method)
             {
